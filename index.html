@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">FAD<span>3</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Requestor</a></li>
+          <li><a href="#">Approver</a></li>
+          <li><a href="#">Evaluator</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Failure Revealed. Solutions Delivered. </h2>
+        <p>
+          We at Material Failure Analysis are committed to identifying, diagnosing, and resolving defects with precision and efficiency. 
+          Through rigorous investigation, advanced analytical techniques, and collaboration across teams, we strive to uncover root causes of failures, improve product reliability, and drive continuous innovation.   
+        </p>
+        <button>Request for Inspection</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+    <footer>
+      <p>Copyright &copy; 2025, All Rights Reserved by FAD3-Systems Group&trade; Louie Rey Oriola.</p>
+    </footer>
+
+  </body>
+</html>
